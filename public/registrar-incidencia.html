@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Incidencia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back-button">
+        Regresar
+        </a>
+        <h1 class="title">REGISTRAR INCIDENCIA EN ACTIVO</h1>
+        <form id="register-incident-form">
+            <div class="incident-section">
+                <div class="incident-details">
+                    <h2>DETALLE DE LA INCIDENCIA</h2>
+                    <textarea id="descripcion" name="descripcion" placeholder="Describa la incidencia" required></textarea>
+                </div>
+                <div class="equipment-details">
+                    <h2>DATOS DEL EQUIPO</h2>
+                    <label for="numero_serie">N° de Serie</label>
+                    <input type="text" id="numero_serie" name="numero_serie" placeholder="Ingrese el número de serie" required>
+                    <button type="button" id="buscar-equipo" class="btn">Buscar</button>
+                    
+                    <label for="equipo">Equipo</label>
+                    <input type="text" id="equipo" name="equipo" placeholder="Ej. Teclado" readonly>
+                
+                    <label for="marca_modelo">Marca-Modelo</label>
+                    <input type="text" id="marca_modelo" name="marca_modelo" placeholder="Ej. Logitech K120" readonly>
+                
+                    <label for="id">ID</label>
+                    <input type="text" id="id" name="id" placeholder="ID del equipo" readonly>
+                </div>
+                
+                
+            </div>
+            <div class="button-group">
+                <button type="submit" class="btn confirm">Confirmar ✔</button>
+                <button type="button" class="btn close" onclick="window.history.back()">Cerrar ✖</button>
+            </div>
+        </form>
+    </div>
+    <script src="registrar-incidencia.js"></script>
+</body>
+</html>

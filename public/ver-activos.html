@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activos Disponibles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back-button">
+        Regresar
+        </a>
+        <h1 class="title">ACTIVOS DISPONIBLES</h1>
+        <div class="search-bar">
+            <label for="search">Buscar:</label>
+            <input type="text" id="search" placeholder="Escriba aquí...">
+            <button id="search-button">Buscar</button>
+        </div>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Equipo</th>
+                    <th>Fecha de Adq.</th>
+                    <th>Marca-Modelo</th>
+                    <th>Serie</th>
+                    <th>Estado</th>
+                    <th>ID</th>
+                    <th>Acciones</th> <!-- Nueva columna -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Los datos serán cargados dinámicamente aquí -->
+            </tbody>
+        </table>
+    </div>
+    <script src="ver-activos.js"></script>
+</body>
+</html>
